@@ -7,6 +7,7 @@ import CustomersIndex from "../../components/customers/customers_index";
 import InsightsAndCasesIndex from "../../components/insightsAndCases/insights_and_cases_index";
 import PortalsIndex from "../../components/portals/portals_index";
 import ContactUsIndex from "../../components/contactUs/contact_us_index";
+import CopyrightIndex from "../../components/copyright/copyright_index";
 
 export default function HomePageDesktop() {
   return (
@@ -18,6 +19,7 @@ export default function HomePageDesktop() {
       {useScreenSize().isDesktop ? <InsightsAndCasesIndex />  : ""}
       {useScreenSize().isDesktop ? <PortalsIndex />  : ""}
       {useScreenSize().isDesktop ? <ContactUsIndex />  : ""}
+      {useScreenSize().isDesktop ? <CopyrightIndex />  : ""}
     </Container>
   );
 }
