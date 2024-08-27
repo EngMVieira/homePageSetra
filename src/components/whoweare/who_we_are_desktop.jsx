@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import Carousel from "./carousel";
 
 export default function WhoWeAreDesktop() {
   return (
     <Container>
       <h1>QUEM SOMOS</h1>
-      <div>
-        <section>
+      <ContentWrapper>
+        <TextSection>
           <p>
             Somos especialistas em oferecer serviços customizados de
             terceirização de atendimento ao cliente.
@@ -24,28 +25,29 @@ export default function WhoWeAreDesktop() {
             “Amamos criar boas experiências por meio de resultados e
             relacionamentos significativos.”
           </p>
-        </section>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <section style={{ marginRight: "100px" }}>
+        </TextSection>
+        <Carousel />
+      </ContentWrapper>
+      <ContentWrapper>
+        <Carousel />
+        <TextSection style={{ marginRight: "100px" }}>
           <p>
             Há poucos minutos do centro de São Paulo, dispomos de uma estrutura
             moderna para sua operação, contando com:
           </p>
           <p>
             • Salas de treinamento
-            <br></br>
+            <br />
             • Salas de reunião
-            <br></br>• Normas LGPD/PCI
-            <br></br>
+            <br />
+            • Normas LGPD/PCI
+            <br />
             • Aberto 24/7
-            <br></br>
+            <br />
             • Geradores e Nobreaks Ambiente 100% Cloud – Algar Data Center
           </p>
-        </section>
-      </div>
+        </TextSection>
+      </ContentWrapper>
     </Container>
   );
 }
@@ -55,30 +57,33 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ajuste de largura máxima */
+  margin: 0 auto; /* Centralizar o container na página */
   h1 {
     margin-top: 40px;
     font-size: 30px;
     font-weight: 600;
   }
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    section {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      p {
-        margin: 30px;
-        font-size: 20px;
-        flex-wrap: wrap;
-      }
-    }
-    div {
-      width: 300px;
-      height: 300px;
-      background-color: gray;
-    }
+`;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  flex-wrap: wrap;
+`;
+
+const TextSection = styled.section`
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  p {
+    margin: 20px 0;
+    font-size: 20px;
   }
 `;

@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
         display: block;
     }
     body {
-        margin-top: 90px;
+
         line-height: 1;
         font-family: "Montserrat", sans-serif;
         font-variation-settings:"slnt" 0;

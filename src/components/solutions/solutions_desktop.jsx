@@ -5,19 +5,26 @@ import TelevendasBranco from "../../assets/Televendas Branco.png";
 import BackofficeBranco from "../../assets/Backoffice Branco.png";
 import MesadeCréditoBranco from "../../assets/Mesa de Crédito Branco.png";
 import DigitalBranco from "../../assets/Digital Branco.png";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import BubbleEffect from "./effect_bubble";
 
 export default function SolutionsDesktop() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const items = [
+    cobrançaBranco,
+    SACBranco,
+    TelevendasBranco,
+    BackofficeBranco,
+    MesadeCréditoBranco,
+    DigitalBranco,
+  ];
   return (
     <Container>
       <h1>SOLUÇÕES</h1>
-      <div>
-        <img src={cobrançaBranco}></img>
-        <img src={SACBranco}></img>
-        <img src={TelevendasBranco}></img>
-        <img src={BackofficeBranco}></img>
-        <img src={MesadeCréditoBranco}></img>
-        <img src={DigitalBranco}></img>
-      </div>
+      <BubbleEffect/>
+
       <section>
         <p>
           Com equipe qualificada e sendo referência na conexão Tecnologia -
@@ -50,13 +57,13 @@ const Container = styled.div`
     font-weight: 600;
     margin-bottom: 40px;
   }
-  div {
+  /* div {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin-bottom: 40px;
     font-size: 20px;
-  }
+  } */
   section {
     width: 90%;
     background-color: #424267;
@@ -67,4 +74,25 @@ const Container = styled.div`
       font-size: 20px;
     }
   }
+`;
+
+const Item = styled.div`
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+`;
+
+const Bubble = styled(motion.div)`
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-radius: 25px;
+  z-index: 0;
 `;

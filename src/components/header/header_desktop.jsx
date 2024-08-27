@@ -42,6 +42,7 @@ const Container = styled.div`
   padding: 0 40px 0 40px;
   position: relative;
   overflow: hidden;
+  z-index: 50;
   div {
     width: 450px;
     display: flex;

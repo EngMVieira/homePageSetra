@@ -10,7 +10,6 @@ export default function CarouselBannersDesktop() {
 
 const Container = styled.div`
 display: flex;
-background-color: red;
 img{
     width: 100%;
 }
