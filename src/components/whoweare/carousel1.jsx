@@ -35,7 +35,7 @@ const CarouselItem = styled.div`
 
 const items = [image1, image2, image3, image4, image5, image6];
 
-export default function Carousel() {
+export default function Carousel1() {
   return (
     <CarouselContainer>
       <Swiper

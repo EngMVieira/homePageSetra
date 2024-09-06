@@ -33,7 +33,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 40px;
-  width: 90%;
+  width: 1250px;
+  height: 500px;
   h1 {
     font-size: 30px;
     font-weight: 600;
@@ -51,7 +52,10 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 100% ;
+    width: 1500px;
+    img{
+      margin: 20px;
+    }
   }
   display: flex;
   justify-content: center;

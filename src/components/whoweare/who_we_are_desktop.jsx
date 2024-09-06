@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Carousel from "./carousel";
+import Carousel1 from "./carousel1";
+import Carousel2 from "./carousel2";
 
 export default function WhoWeAreDesktop() {
   return (
@@ -26,10 +27,10 @@ export default function WhoWeAreDesktop() {
             relacionamentos significativos.”
           </p>
         </TextSection>
-        <Carousel />
+        <Carousel1 />
       </ContentWrapper>
       <ContentWrapper>
-        <Carousel />
+        <Carousel2 />
         <TextSection style={{ marginRight: "100px" }}>
           <p>
             Há poucos minutos do centro de São Paulo, dispomos de uma estrutura

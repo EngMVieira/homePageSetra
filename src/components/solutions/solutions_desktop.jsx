@@ -50,6 +50,7 @@ const Container = styled.div`
   justify-content: center;
   background: linear-gradient(to right, #3533cd, #000000);
   width: 100%;
+  height: 500px;
   color: white;
   padding: 40px;
   h1 {
@@ -65,7 +66,7 @@ const Container = styled.div`
     font-size: 20px;
   } */
   section {
-    width: 90%;
+    width: 1200px;
     background-color: #424267;
     border-radius: 50px;
     padding: 30px;

@@ -106,14 +106,14 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 1200px;
     img {
       cursor: pointer;
     }
     margin-bottom: 40px;
   }
   section {
-    width: 90%;
+    width: 1200px;
     background-color: #424267;
     border-radius: 50px;
     padding: 30px;

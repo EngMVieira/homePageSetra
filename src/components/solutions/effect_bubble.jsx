@@ -11,7 +11,7 @@ import DigitalBranco from "../../assets/Digital Branco.png";
 const Container = styled.div`
   display: flex;
   position: relative;
-  width: 90%;
+  width: 1200px;
   height: 150px;
   background-color: #f0f0f0;
   border-radius: 25px;

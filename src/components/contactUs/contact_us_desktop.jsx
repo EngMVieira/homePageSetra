@@ -7,7 +7,43 @@ import Mail from "../../assets/Mail.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 export default function ContactUsDesktop() {
+  const [inputs, setInputs] = useState();
+  const handleInputChange = (event) => {
+    setInputs({ ...inputs, [event.target.name]: event.target.value });
+  };
+  const [loading, setLoading] = useState(false)
+
+  function sendEmail(e) {
+    e.preventDefault();
+    const templateParams = {
+      from_name: inputs.name,
+      surname: inputs.surname,
+      email: inputs.email,
+      phone: inputs.phone,
+      enterprise: inputs.enterprise,
+      subject: inputs.subject,
+      message: inputs.message,
+    };
+    setLoading(true)
+    emailjs
+      .send(
+        "service_4mm0sdg",
+        "template_v9yssqi",
+        templateParams,
+        "VAXZ1FGQaFHH7Aa_l"
+      )
+      .then((resp) => {
+        alert("Formulário enviado com sucesso!")
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.log(err)
+        setLoading(false)
+      });
+  }
   return (
     <Container>
       <h1>FALE CONOSCO</h1>
@@ -18,20 +54,56 @@ export default function ContactUsDesktop() {
       </p>
       <div className="items">
         <div className="forms">
-          <form>
+          <form onSubmit={sendEmail}>
             <div>
-              <input placeholder="Nome" required></input>
-              <input placeholder="Sobre Nome" required></input>
+              <input
+                placeholder="Nome"
+                name="name"
+                onChange={handleInputChange}
+                required
+              ></input>
+              <input
+                placeholder="Sobre Nome"
+                name="surname"
+                onChange={handleInputChange}
+                required
+              ></input>
             </div>
-            <input placeholder="Email" type="email" required></input>
+            <input
+              placeholder="Email"
+              type="email"
+              name="email"
+              onChange={handleInputChange}
+              required
+            ></input>
             <div>
-              <input placeholder="Telefone" required></input>
-              <input placeholder="Empresa" required></input>
+              <input
+                placeholder="Telefone"
+                name="phone"
+                onChange={handleInputChange}
+                required
+              ></input>
+              <input
+                placeholder="Empresa"
+                name="enterprise"
+                onChange={handleInputChange}
+                required
+              ></input>
             </div>
-            <input placeholder="Assunto" required></input>
-            <input placeholder="Mensagem" required></input>
+            <input
+              placeholder="Assunto"
+              name="subject"
+              onChange={handleInputChange}
+              required
+            ></input>
+            <input
+              placeholder="Mensagem"
+              name="message"
+              onChange={handleInputChange}
+              required
+            ></input>
             <div className="checkbox">
-              <input type="checkbox"></input>
+              <input type="checkbox" required></input>
               <p>
                 Eu aceito receber notícias relevantes do setor, relatórios
                 analíticos, white papers, cases e informações sobre produtos da
@@ -40,7 +112,7 @@ export default function ContactUsDesktop() {
                 <span> Consulte a Política de Privacidade da SETRA BPO.</span>
               </p>
             </div>
-            <button>Enviar</button>
+            {loading ? <button disabled={true}>Enviando...</button> : <button>Enviar</button>}
           </form>
         </div>
         <div className="contact">
@@ -92,32 +164,37 @@ const Container = styled.div`
   padding: 40px;
   color: white;
   .items {
-    width: 70%;
+    width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 40px;
     .contact {
-      height: 400px;
+      height: 440px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-left: 50px;
       .links {
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        margin-top: 40px;
-        .media{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            margin-top: 20px;
-            p{
-                margin-bottom: 5px;
-            }
-            img{
-                width: 30px;
-            }
+        /* margin-top: 40px; */
+        p {
+          font-size: 14px;
+        }
+        .media {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          margin-top: 20px;
+          p {
+            margin-bottom: 5px;
+          }
+          img {
+            width: 30px;
+          }
         }
       }
       div {
@@ -144,7 +221,6 @@ const Container = styled.div`
     border-radius: 20px;
     padding: 40px;
     width: 600px;
-    margin-top: 40px;
     form {
       width: 100%;
       display: flex;
@@ -184,6 +260,9 @@ const Container = styled.div`
       color: black;
       display: flex;
       align-items: start;
+      p {
+        font-size: 14px;
+      }
       input {
         cursor: pointer;
         width: 20px;
