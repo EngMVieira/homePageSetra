@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
         display: block;
     }
     body {
-
+        
         line-height: 1;
         font-family: "Montserrat", sans-serif;
         font-variation-settings:"slnt" 0;

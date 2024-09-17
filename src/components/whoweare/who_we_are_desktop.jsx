@@ -4,7 +4,7 @@ import Carousel2 from "./carousel2";
 
 export default function WhoWeAreDesktop() {
   return (
-    <Container>
+    <Container id="whoweare">
       <h1>QUEM SOMOS</h1>
       <ContentWrapper>
         <TextSection>
@@ -86,5 +86,6 @@ const TextSection = styled.section`
   p {
     margin: 20px 0;
     font-size: 20px;
+    line-height: 1.5;
   }
 `;

@@ -3,8 +3,8 @@ import desembaraça from "../../assets/Desembaraça.png";
 import painel from "../../assets/Painel Setra.png";
 export default function PortalsDesktop() {
   return (
-    <Container>
-      <h1>PORTAIS</h1>
+    <Container id="portals">
+      <h1 >PORTAIS</h1>
       <section>
         <div>
           <p>
@@ -45,11 +45,13 @@ const Container = styled.div`
   }
   p{
     font-size: 20px;
+    line-height: 1.5;
   }
   section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
     width: 1200px;
     div {
       display: flex;

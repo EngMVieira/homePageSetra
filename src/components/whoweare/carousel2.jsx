@@ -5,8 +5,8 @@ import styled from "styled-components";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import image1 from "../../assets/Carrosel/1.jpeg";
-import image2 from "../../assets/Carrosel/2.jpg";
+import image1 from "../../assets/Carrosel/1.jpg";
+import image2 from "../../assets/Carrosel/2.jpeg";
 import image3 from "../../assets/Carrosel/3.jpeg";
 import image4 from "../../assets/Carrosel/4.jpeg";
 import image5 from "../../assets/Carrosel/5.jpeg";
@@ -43,7 +43,7 @@ export default function Carousel2() {
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 3500 }}
+        autoplay={{ delay: 6000 }}
         pagination={{ clickable: true }}
         navigation={true}
         style={{ width: "100%", height: "auto" }} // Garantindo que o swiper ocupe a largura total do container

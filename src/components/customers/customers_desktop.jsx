@@ -7,8 +7,8 @@ import collection from "../../assets/collection.webp"
 import crefisa from "../../assets/crefisa.webp"
 export default function CustomersDesktop() {
   return (
-    <Container>
-      <h1>CLIENTES</h1>
+    <Container id="customers">
+      <h1 >CLIENTES</h1>
       <p>
         Estes parceiros acreditaram na nossa proposta de como podemos contribuir
         para o crescimento de seus negócios. Acreditamos que existem 2 pilares
@@ -42,6 +42,7 @@ const Container = styled.div`
   }
   p{
     font-size: 20px;
+    line-height: 1.5;
     span{
         font-weight: bold;
     }

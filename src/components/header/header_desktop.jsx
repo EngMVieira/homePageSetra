@@ -1,14 +1,22 @@
 import styled, { keyframes } from "styled-components";
-import logo from "../../assets/Logo Setra BPO.png"
+import logo from "../../assets/Logo Setra BPO.png";
 export default function HeaderDesktop() {
   return (
     <Container>
-        <img src={logo}></img>
+      <img src={logo}></img>
       <div>
-        <p>Quem Somos</p>
-        <p>Soluções</p>
-        <p>Clientes</p>
-        <p>Portais</p>
+        <p>
+          <a href="#whoweare">Quem Somos</a>
+        </p>
+        <p>
+          <a href="#solutions">Soluções</a>
+        </p>
+        <p>
+          <a href="#customers">Clientes</a>
+        </p>
+        <p>
+          <a href="#portals">Portais</a>
+        </p>
       </div>
     </Container>
   );
@@ -48,12 +56,16 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    p{
-        cursor: pointer;
+    p {
+      cursor: pointer;
     }
   }
-  img{
+  img {
     width: 200px;
     cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
 `;

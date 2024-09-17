@@ -164,17 +164,18 @@ const Container = styled.div`
   padding: 40px;
   color: white;
   .items {
-    width: 1200px;
+    width: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
     .contact {
       height: 440px;
+      width: 800px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-left: 50px;
+      margin-left: 100px;
       .links {
         display: flex;
         flex-direction: column;
