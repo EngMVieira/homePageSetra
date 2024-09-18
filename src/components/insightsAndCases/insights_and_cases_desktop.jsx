@@ -173,7 +173,10 @@ const Container = styled.div`
     background-color: #424267;
     border-radius: 50px;
     padding: 30px;
-    height: 250px;
+    height: 200px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
     p {
       display: flex;
       align-items: center;

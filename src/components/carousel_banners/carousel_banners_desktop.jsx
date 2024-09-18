@@ -7,22 +7,23 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import useScreenSize from "../../hooks/useScreenSize";
 export default function CarouselBannersDesktop() {
   const items = [banner1, banner2, banner3];
+  const {isMobile} = useScreenSize()
   return (
-    <Container>
+    <Container isMobile={isMobile}>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 3500 }}
-        pagination={{ clickable: true }}
         style={{ width: "100%", height: "auto" }} // Garantindo que o swiper ocupe a largura total do container
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <CarouselItem>
+            <CarouselItem isMobile={isMobile}>
               <img src={item}></img>
             </CarouselItem>
           </SwiperSlide>
@@ -35,7 +36,6 @@ export default function CarouselBannersDesktop() {
 const Container = styled.div`
   display: flex;
   width: 100%;
-  height: 400px;
   img {
     width: 100%;
   }
@@ -53,6 +53,5 @@ const CarouselItem = styled.div`
   align-items: center;
   img{
     width: 100%;
-    height: 400px;
   }
 `;
