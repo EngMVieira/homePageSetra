@@ -103,7 +103,7 @@ const Container = styled.div`
   div {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 1200px;
     margin-bottom: 40px;
     font-size: 20px;
     div {
@@ -118,10 +118,18 @@ const Container = styled.div`
   }
   section {
     width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #424267;
     border-radius: 50px;
     padding: 30px;
+    height: 250px;
     p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
       margin-bottom: 20px;
       font-size: 20px;
       line-height: 1.5;

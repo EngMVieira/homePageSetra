@@ -18,7 +18,6 @@ export default function CarouselBannersDesktop() {
         loop={true}
         autoplay={{ delay: 3500 }}
         pagination={{ clickable: true }}
-        navigation={true}
         style={{ width: "100%", height: "auto" }} // Garantindo que o swiper ocupe a largura total do container
       >
         {items.map((item, index) => (
@@ -36,7 +35,7 @@ export default function CarouselBannersDesktop() {
 const Container = styled.div`
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 400px;
   img {
     width: 100%;
   }
@@ -54,6 +53,6 @@ const CarouselItem = styled.div`
   align-items: center;
   img{
     width: 100%;
-    height: 300px;
+    height: 400px;
   }
 `;

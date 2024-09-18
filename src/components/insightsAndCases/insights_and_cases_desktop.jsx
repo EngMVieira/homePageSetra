@@ -145,7 +145,7 @@ const Container = styled.div`
   .cases{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 1200px;
     margin-bottom: 40px;
     div{
       padding: 100px;
@@ -173,10 +173,14 @@ const Container = styled.div`
     background-color: #424267;
     border-radius: 50px;
     padding: 30px;
+    height: 250px;
     p {
-      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 20px;
       line-height: 1.5;
+      height: 200px;
     }
   }
 `;

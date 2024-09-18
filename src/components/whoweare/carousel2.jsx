@@ -45,7 +45,6 @@ export default function Carousel2() {
         loop={true}
         autoplay={{ delay: 6000 }}
         pagination={{ clickable: true }}
-        navigation={true}
         style={{ width: "100%", height: "auto" }} // Garantindo que o swiper ocupe a largura total do container
       >
         {items.map((item, index) => (

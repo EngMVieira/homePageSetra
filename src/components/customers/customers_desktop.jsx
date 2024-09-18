@@ -34,7 +34,7 @@ const Container = styled.div`
   justify-content: center;
   padding: 40px;
   width: 1250px;
-  height: 500px;
+  height: auto;
   h1 {
     font-size: 30px;
     font-weight: 600;
@@ -53,7 +53,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 1500px;
+    width: 1200px;
     img{
       margin: 20px;
     }
