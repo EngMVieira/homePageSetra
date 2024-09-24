@@ -12,14 +12,14 @@ import CopyrightIndex from "../../components/copyright/copyright_index";
 export default function HomePageDesktop() {
   return (
     <Container>
-      {useScreenSize().isDesktop ? <CarouselBannersIndex />  : ""}
-      {useScreenSize().isDesktop ? <WhoWeAreIndex />  : ""}
-      {useScreenSize().isDesktop ? <SolutionsIndex />  : ""}
-      {useScreenSize().isDesktop ? <CustomersIndex />  : ""}
-      {useScreenSize().isDesktop ? <InsightsAndCasesIndex />  : ""}
-      {useScreenSize().isDesktop ? <PortalsIndex />  : ""}
-      {useScreenSize().isDesktop ? <ContactUsIndex />  : ""}
-      {useScreenSize().isDesktop ? <CopyrightIndex />  : ""}
+      <CarouselBannersIndex />
+       <WhoWeAreIndex />  
+       <SolutionsIndex />  
+       <CustomersIndex />  
+       <InsightsAndCasesIndex />  
+       <PortalsIndex />  
+       <ContactUsIndex />  
+       <CopyrightIndex />  
     </Container>
   );
 }

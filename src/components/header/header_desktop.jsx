@@ -1,23 +1,36 @@
 import styled, { keyframes } from "styled-components";
 import logo from "../../assets/Logo Setra BPO.png";
+import logoMobile from "../../assets/Favicon.png";
+import useScreenSize from "../../hooks/useScreenSize";
+import SideBoxMobile from "./side_box_mobile";
 export default function HeaderDesktop() {
+  const { isMobile } = useScreenSize();
   return (
-    <Container>
-      <img src={logo}></img>
-      <div>
-        <p>
-          <a href="#whoweare">Quem Somos</a>
-        </p>
-        <p>
-          <a href="#solutions">Soluções</a>
-        </p>
-        <p>
-          <a href="#customers">Clientes</a>
-        </p>
-        <p>
-          <a href="#portals">Portais</a>
-        </p>
-      </div>
+    <Container isMobile={isMobile}>
+      {isMobile ? (
+        <>
+          <img src={logoMobile}></img>
+          <SideBoxMobile />
+        </>
+      ) : (
+        <>
+          <img src={logo}></img>{" "}
+          <div>
+            <p>
+              <a href="#whoweare">Quem Somos</a>
+            </p>
+            <p>
+              <a href="#solutions">Soluções</a>
+            </p>
+            <p>
+              <a href="#customers">Clientes</a>
+            </p>
+            <p>
+              <a href="#portals">Portais</a>
+            </p>
+          </div>
+        </>
+      )}
     </Container>
   );
 }
@@ -41,7 +54,7 @@ const Container = styled.div`
   );
   background-size: 200% 200%;
   animation: ${moveGradient} 5s linear infinite;
-  height: 90px; /* Ajuste conforme necessário */
+  height: ${({isMobile}) => (isMobile ? '60px' : '90px')}; 
   width: 100%; /* Ajuste conforme necessário */
   display: flex;
   align-items: center;
@@ -52,7 +65,7 @@ const Container = styled.div`
   overflow: hidden;
   z-index: 50;
   div {
-    width: 450px;
+    width: ${({isMobile}) => (isMobile ? '30px' : '450px')};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,10 +74,10 @@ const Container = styled.div`
     }
   }
   img {
-    width: 200px;
+    width: ${({isMobile}) => (isMobile ? '30px' : '200px')};
     cursor: pointer;
   }
-  a{
+  a {
     text-decoration: none;
     color: white;
   }

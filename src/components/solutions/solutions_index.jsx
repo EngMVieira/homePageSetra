@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import useScreenSize from "../../hooks/useScreenSize";
 import SolutionsDesktop from "./solutions_desktop";
+import SolutionsMobile from "./solutions_mobile";
 
 export default function SolutionsIndex() {
   const translateX = 100; // or whatever value you want to pass
@@ -11,7 +12,7 @@ export default function SolutionsIndex() {
       {useScreenSize().isDesktop ? (
         <SolutionsDesktop translateX={translateX} />
       ) : (
-        ""
+        <SolutionsMobile/>
       )}
     </Container>
   );

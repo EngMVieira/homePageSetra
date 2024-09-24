@@ -10,9 +10,8 @@ import "swiper/css/pagination";
 import useScreenSize from "../../hooks/useScreenSize";
 export default function CarouselBannersDesktop() {
   const items = [banner1, banner2, banner3];
-  const {isMobile} = useScreenSize()
   return (
-    <Container isMobile={isMobile}>
+    <Container>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
@@ -23,7 +22,7 @@ export default function CarouselBannersDesktop() {
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <CarouselItem isMobile={isMobile}>
+            <CarouselItem>
               <img src={item}></img>
             </CarouselItem>
           </SwiperSlide>

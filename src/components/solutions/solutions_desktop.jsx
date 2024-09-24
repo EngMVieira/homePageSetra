@@ -40,7 +40,7 @@ export default function SolutionsDesktop() {
     const intervalId = setInterval(() => {
       setActiveImage(prevImage => {
         const nextImage = (prevImage + 1) % 6; // Incrementa e faz o loop de volta ao 0 após 6
-        console.log(nextImage); // Para depuração
+
         return nextImage;
       });
     }, 6000);

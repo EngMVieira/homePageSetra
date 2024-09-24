@@ -6,7 +6,6 @@ import HomePageIndex from "./pages/home_page/home_page_index";
 import HeaderIndex from "./components/header/header_index";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>

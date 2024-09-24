@@ -5,7 +5,7 @@ import CarouselBannersDesktop from "./carousel_banners_desktop";
 export default function CarouselBannersIndex() {
   return (
     <Container>
-      {useScreenSize().isDesktop ? <CarouselBannersDesktop /> : ""}
+      <CarouselBannersDesktop />
     </Container>
   );
 }

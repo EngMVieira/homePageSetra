@@ -18,7 +18,6 @@ export default function InsightsAndCasesDesktop() {
     const intervalId = setInterval(() => {
       setActiveImage(prevImage => {
         const nextImage = (prevImage + 1) % 4; // Incrementa e faz o loop de volta ao 0 após 6
-        console.log(nextImage); // Para depuração
         return nextImage;
       });
     }, 6000);
