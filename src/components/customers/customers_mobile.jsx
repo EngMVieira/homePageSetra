@@ -17,18 +17,12 @@ export default function CustomersMobile() {
         <span>Relacionamento.</span>
       </p>
       <ImageList>
-        <ImageRow>
-          <img src={riachuelo} alt="Riachuelo" style={{height: "54px"}}/>
-          <img src={qista} alt="Qista" />
-        </ImageRow>
-        <ImageRow>
-          <img src={credisystem} alt="Credisystem" />
-          <img src={Midway} alt="Midway" style={{height: "54px"}}/>
-        </ImageRow>
-        <ImageRow>
-          <img src={collection} alt="Collection" />
-          <img src={crefisa} alt="Crefisa" />
-        </ImageRow>
+        <img src={riachuelo} alt="Riachuelo" style={{ height: "54px" }} />
+        <img src={qista} alt="Qista" />
+        <img src={credisystem} alt="Credisystem" />
+        <img src={Midway} alt="Midway" style={{ height: "54px" }} />
+        <img src={collection} alt="Collection" />
+        <img src={crefisa} alt="Crefisa" />
       </ImageList>
     </Container>
   );
@@ -62,18 +56,12 @@ const Container = styled.div`
 const ImageList = styled.div`
   margin-top: 40px;
   display: flex;
-  flex-direction: column; // Para agrupar linhas de imagens
-  align-items: center; // Centraliza as linhas de imagens
+  flex-direction: column; // Empilha as imagens uma embaixo da outra
+  align-items: center; // Centraliza as imagens
   width: 100%; // Ajuste conforme necessário
-`;
-
-const ImageRow = styled.div`
-  display: flex;
-  justify-content: center; // Centraliza as imagens em cada linha
-  margin: 10px 0; // Espaçamento vertical entre as linhas
 
   img {
-    margin: 0 10px; // Espaçamento horizontal entre as imagens
+    margin: 10px 0; // Espaçamento vertical entre as imagens
     max-width: 300px; // Reduz o tamanho das imagens
     height: auto; // Mantém a proporção da imagem
   }

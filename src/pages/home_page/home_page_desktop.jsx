@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import useScreenSize from "../../hooks/useScreenSize";
 import CarouselBannersIndex from "../../components/carousel_banners/carousel_banners_index";
 import WhoWeAreIndex from "../../components/whoweare/who_we_are_index";
 import SolutionsIndex from "../../components/solutions/solutions_index";
@@ -13,13 +12,13 @@ export default function HomePageDesktop() {
   return (
     <Container>
       <CarouselBannersIndex />
-       <WhoWeAreIndex />  
-       <SolutionsIndex />  
-       <CustomersIndex />  
-       <InsightsAndCasesIndex />  
-       <PortalsIndex />  
-       <ContactUsIndex />  
-       <CopyrightIndex />  
+      <WhoWeAreIndex />
+      <SolutionsIndex />
+      <CustomersIndex />
+      <InsightsAndCasesIndex />
+      <PortalsIndex />
+      <ContactUsIndex />
+      <CopyrightIndex />
     </Container>
   );
 }

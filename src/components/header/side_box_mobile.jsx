@@ -11,8 +11,11 @@ import ListItemText from "@mui/material/ListItemText";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { FaRegBuilding } from "react-icons/fa";
-import { PiSuitcaseSimple } from "react-icons/pi";
+import { FaRegCircleQuestion } from "react-icons/fa6";
+import { AiOutlineSolution } from "react-icons/ai";
+import { FaRegUser } from "react-icons/fa";
+import { BsInfoSquare } from "react-icons/bs";
+
 
 export default function SideBoxMobile() {
   const [open, setOpen] = React.useState(false);
@@ -26,13 +29,13 @@ export default function SideBoxMobile() {
       <Center>
         <ListDrawer style={{ padding: "20px" }}>
           <p style={{ marginLeft: "19px", marginBottom: "19px" }}>
-            Minha Plataforma
+            Bem Vindo a Setra
           </p>
           <ListItem disablePadding>
             <a href="#whoweare">
               <ListItemButton>
                 <ListItemIcon>
-                  <FaRegBuilding size={25} className="icon" />
+                  <FaRegCircleQuestion size={25} className="icon" />
                 </ListItemIcon>
                 <ListItemText primary={"Quem Somos"} className="text" />
               </ListItemButton>
@@ -42,7 +45,7 @@ export default function SideBoxMobile() {
             <a href="#solutions">
               <ListItemButton>
                 <ListItemIcon>
-                  <PiSuitcaseSimple size={25} className="icon" />
+                  <AiOutlineSolution size={25} className="icon" />
                 </ListItemIcon>
                 <ListItemText primary={"Soluções"} className="text" />
               </ListItemButton>
@@ -52,7 +55,7 @@ export default function SideBoxMobile() {
             <a href="#customers">
               <ListItemButton>
                 <ListItemIcon>
-                  <PiSuitcaseSimple size={25} className="icon" />
+                  <FaRegUser size={25} className="icon" />
                 </ListItemIcon>
                 <ListItemText primary={"Clientes"} className="text" />
               </ListItemButton>
@@ -62,7 +65,7 @@ export default function SideBoxMobile() {
             <a href="#portals">
               <ListItemButton>
                 <ListItemIcon>
-                  <PiSuitcaseSimple size={25} className="icon" />
+                  <BsInfoSquare size={25} className="icon" />
                 </ListItemIcon>
                 <ListItemText primary={"Portais"} className="text" />
               </ListItemButton>

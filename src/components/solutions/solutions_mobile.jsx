@@ -39,8 +39,8 @@ export default function SolutionsMobile() {
     <Container id="solutions">
       <h1>SOLUÇÕES</h1>
       <Swiper
-        spaceBetween={200}
-        slidesPerView={3}
+        spaceBetween={199}
+        slidesPerView={1}
         loop={true}
         navigation
         autoplay={{
@@ -64,7 +64,7 @@ export default function SolutionsMobile() {
         ))}
       </Swiper>
       <TextBox>
-        <Text>{texts[activeIndex]}</Text> {/* Mostra o texto do slide ativo */}
+        <Text>{texts[activeIndex]}</Text> 
       </TextBox>
     </Container>
   );
@@ -115,6 +115,10 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 200px;
+  img{
+    width: auto;
+    height: auto;
+  }
 `;
 
 const TextBox = styled.div`

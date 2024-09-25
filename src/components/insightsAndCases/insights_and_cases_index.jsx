@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import useScreenSize from "../../hooks/useScreenSize";
 import InsightsAndCasesDesktop from "./insights_and_cases_desktop";
+import InsightsAndCasesMobile from "./insights_and_cases_mobile";
 
 export default function InsightsAndCasesIndex() {
   return (
     <Container>
-      {useScreenSize().isDesktop ? <InsightsAndCasesDesktop /> : ""}
+      {useScreenSize().isDesktop ? <InsightsAndCasesDesktop /> : <InsightsAndCasesMobile/>}
     </Container>
   );
 }

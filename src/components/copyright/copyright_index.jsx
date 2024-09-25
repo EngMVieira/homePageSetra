@@ -5,7 +5,7 @@ import CopyrightDesktop from "./copyright_desktop";
 export default function CopyrightIndex() {
   return (
     <Container>
-      {useScreenSize().isDesktop ? <CopyrightDesktop /> : ""}
+      <CopyrightDesktop />
     </Container>
   );
 }

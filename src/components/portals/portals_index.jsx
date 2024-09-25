@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import useScreenSize from "../../hooks/useScreenSize";
 import PortalsDesktop from "./portals_desktop";
+import PortalsMobile from "./portals_mobile";
 
 export default function PortalsIndex() {
   return (
     <Container>
-      {useScreenSize().isDesktop ? <PortalsDesktop /> : ""}
+      {useScreenSize().isDesktop ? <PortalsDesktop /> : <PortalsMobile/>}
     </Container>
   );
 }
