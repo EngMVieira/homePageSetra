@@ -7,7 +7,6 @@ export default function WhoWheAreMobile() {
     <Container id="whoweare">
       <h1>QUEM SOMOS</h1>
       <ContentWrapper>
-        <Carousel1 />
         <TextSection>
           <p>
             Somos especialistas em oferecer serviços customizados de
@@ -28,9 +27,9 @@ export default function WhoWheAreMobile() {
             relacionamentos significativos.”
           </p>
         </TextSection>
+        <Carousel1 />
       </ContentWrapper>
       <ContentWrapper>
-        <Carousel2 />
         <TextSection>
           <p>
             Há poucos minutos do centro de São Paulo, dispomos de uma estrutura
@@ -47,6 +46,7 @@ export default function WhoWheAreMobile() {
             <br />• Geradores e Nobreaks Ambiente 100% Cloud – Algar Data Center
           </p>
         </TextSection>
+        <Carousel2 />
       </ContentWrapper>
     </Container>
   );
@@ -61,7 +61,7 @@ const Container = styled.div`
   margin: 0 auto; /* Centralizar o container na página */
   h1 {
     margin-top: 40px;
-    margin-bottom: 40px;
+
     font-size: 30px;
     font-weight: 600;
   }

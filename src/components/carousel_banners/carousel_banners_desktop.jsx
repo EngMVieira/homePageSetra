@@ -2,6 +2,9 @@ import styled from "styled-components";
 import banner1 from "../../assets/Banners Institucional/1.png";
 import banner2 from "../../assets/Banners Institucional/2.png";
 import banner3 from "../../assets/Banners Institucional/3.png";
+import bannerm1 from "../../assets/Banners Institucional/1m.png";
+import bannerm2 from "../../assets/Banners Institucional/2m.png";
+import bannerm3 from "../../assets/Banners Institucional/3m.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -9,7 +12,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import useScreenSize from "../../hooks/useScreenSize";
 export default function CarouselBannersDesktop() {
-  const items = [banner1, banner2, banner3];
+  const {isMobile} = useScreenSize()
+  let itemsMobile = [bannerm1, bannerm2, bannerm3]
+  let itemsDesktop = [banner1, banner2, banner3];
+  let renderItems = isMobile ? itemsMobile : itemsDesktop
   return (
     <Container>
       <Swiper
@@ -20,7 +26,7 @@ export default function CarouselBannersDesktop() {
         autoplay={{ delay: 3500 }}
         style={{ width: "100%", height: "auto" }} // Garantindo que o swiper ocupe a largura total do container
       >
-        {items.map((item, index) => (
+        {renderItems.map((item, index) => (
           <SwiperSlide key={index}>
             <CarouselItem>
               <img src={item}></img>

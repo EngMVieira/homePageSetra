@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import logo from "../../assets/Logo Setra BPO.png";
-import logoMobile from "../../assets/Favicon.png";
+import logoMobile from "../../assets/Cópia de Logo Setra BPO.png";
 import useScreenSize from "../../hooks/useScreenSize";
 import SideBoxMobile from "./side_box_mobile";
 export default function HeaderDesktop() {
@@ -54,7 +54,7 @@ const Container = styled.div`
   );
   background-size: 200% 200%;
   animation: ${moveGradient} 5s linear infinite;
-  height: ${({isMobile}) => (isMobile ? '60px' : '90px')}; 
+  height: ${({ isMobile }) => (isMobile ? "60px" : "90px")};
   width: 100%; /* Ajuste conforme necessário */
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ const Container = styled.div`
   overflow: hidden;
   z-index: 50;
   div {
-    width: ${({isMobile}) => (isMobile ? '30px' : '450px')};
+    width: ${({ isMobile }) => (isMobile ? "30px" : "450px")};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +74,7 @@ const Container = styled.div`
     }
   }
   img {
-    width: ${({isMobile}) => (isMobile ? '30px' : '200px')};
+    width: ${({ isMobile }) => (isMobile ? "30px" : "200px")};
     cursor: pointer;
   }
   a {

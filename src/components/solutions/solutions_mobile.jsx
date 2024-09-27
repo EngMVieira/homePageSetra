@@ -34,7 +34,7 @@ const texts = [
 
 export default function SolutionsMobile() {
   const [activeIndex, setActiveIndex] = useState(0);
-    console.log(activeIndex)
+
   return (
     <Container id="solutions">
       <h1>SOLUÇÕES</h1>
@@ -115,6 +115,7 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 200px;
+  height: 200px;
   img{
     width: auto;
     height: auto;
