@@ -18,7 +18,6 @@ export default function CustomersDesktop() {
       <div>
         <img src={riachuelo}></img>
         <img src={qista}></img>
-        <img src={credisystem}></img>
         <img src={Midway}></img>
         <img src={collection}></img>
         <img src={crefisa}></img>

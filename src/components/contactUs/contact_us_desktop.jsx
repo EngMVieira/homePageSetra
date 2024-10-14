@@ -14,7 +14,7 @@ export default function ContactUsDesktop() {
   const handleInputChange = (event) => {
     setInputs({ ...inputs, [event.target.name]: event.target.value });
   };
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -27,7 +27,7 @@ export default function ContactUsDesktop() {
       subject: inputs.subject,
       message: inputs.message,
     };
-    setLoading(true)
+    setLoading(true);
     emailjs
       .send(
         "service_4mm0sdg",
@@ -36,12 +36,12 @@ export default function ContactUsDesktop() {
         "VAXZ1FGQaFHH7Aa_l"
       )
       .then((resp) => {
-        alert("Formulário enviado com sucesso!")
-        setLoading(false)
+        alert("Formulário enviado com sucesso!");
+        setLoading(false);
       })
       .catch((err) => {
-        console.log(err)
-        setLoading(false)
+        console.log(err);
+        setLoading(false);
       });
   }
   return (
@@ -112,7 +112,11 @@ export default function ContactUsDesktop() {
                 <span> Consulte a Política de Privacidade da SETRA BPO.</span>
               </p>
             </div>
-            {loading ? <button disabled={true}>Enviando...</button> : <button>Enviar</button>}
+            {loading ? (
+              <button disabled={true}>Enviando...</button>
+            ) : (
+              <button>Enviar</button>
+            )}
           </form>
         </div>
         <div className="contact">
@@ -133,18 +137,40 @@ export default function ContactUsDesktop() {
           </div>
           <div>
             <img src={Mail}></img>
-            <p>rh@setrabpo.com.br</p>
+            <p>trabalheconosco@setrabpo.com.br</p>
           </div>
           <div className="links">
-            <p>POLÍTICA DE PRIVACIDADE</p>
-            <p>TERMOS DE USO</p>
+            <a
+              href="https://www.setrabpo.com.br/politica-de-privacidade"
+              target="_blank"
+            >
+              <p>POLÍTICA DE PRIVACIDADE</p>
+            </a>
+            <a href="https://www.setrabpo.com.br/termos-de-uso" target="_blank">
+              <p>TERMOS DE USO</p>
+            </a>
             <p>CONFIGURAÇÕES DE COOKIES</p>
             <div className="media">
               <p>Siga-nos</p>
               <div>
-                <img src={facebook}></img>
-                <img src={instagram}></img>
-                <img src={linkedin}></img>
+                <a
+                  href="https://www.facebook.com/share/hNJPg4naDV734h77/?mibextid=LQQJ4d"
+                  target="_blank"
+                >
+                  <img src={facebook}></img>
+                </a>
+                <a
+                  href="https://www.instagram.com/setrabpo?igsh=Z2pyajd3end1c3c3"
+                  target="_blank"
+                >
+                  <img src={instagram}></img>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/setrabpo/"
+                  target="_blank"
+                >
+                  <img src={linkedin}></img>
+                </a>
               </div>
             </div>
           </div>
@@ -181,6 +207,9 @@ const Container = styled.div`
         flex-direction: column;
         justify-content: start;
         align-items: start;
+        a {
+          color: white;
+        }
         /* margin-top: 40px; */
         p {
           font-size: 14px;

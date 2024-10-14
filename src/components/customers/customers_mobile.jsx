@@ -19,7 +19,6 @@ export default function CustomersMobile() {
       <ImageList>
         <img src={riachuelo} alt="Riachuelo" style={{ height: "54px" }} />
         <img src={qista} alt="Qista" />
-        <img src={credisystem} alt="Credisystem" />
         <img src={Midway} alt="Midway" style={{ height: "54px" }} />
         <img src={collection} alt="Collection" />
         <img src={crefisa} alt="Crefisa" />

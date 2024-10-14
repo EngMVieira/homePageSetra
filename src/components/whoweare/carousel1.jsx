@@ -8,9 +8,7 @@ import "swiper/css/pagination";
 import image1 from "../../assets/Carrosel/1.jpg";
 import image2 from "../../assets/Carrosel/2.jpeg";
 import image3 from "../../assets/Carrosel/3.jpeg";
-import image4 from "../../assets/Carrosel/4.jpeg";
-import image5 from "../../assets/Carrosel/5.jpeg";
-import image6 from "../../assets/Carrosel/6.jpeg";
+
 // Estilos para o container do carrossel
 const CarouselContainer = styled.div`
   width: 100%;
@@ -33,7 +31,7 @@ const CarouselItem = styled.div`
   }
 `;
 
-const items = [image1, image2, image3, image4, image5, image6];
+const items = [image1, image2, image3];
 
 export default function Carousel1() {
   return (

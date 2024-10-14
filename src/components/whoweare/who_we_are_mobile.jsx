@@ -22,10 +22,6 @@ export default function WhoWheAreMobile() {
             Recuperação de Crédito, Backoffice, Mesa de Crédito, Omnichannel e
             serviços digitais.
           </p>
-          <p style={{ fontSize: "16px" }}>
-            “Amamos criar boas experiências por meio de resultados e
-            relacionamentos significativos.”
-          </p>
         </TextSection>
         <Carousel1 />
       </ContentWrapper>

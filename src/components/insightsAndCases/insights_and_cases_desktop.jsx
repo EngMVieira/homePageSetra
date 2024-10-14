@@ -48,14 +48,18 @@ export default function InsightsAndCasesDesktop() {
       <div className="options">
         <p
           onClick={() => setOptions("insights")}
-          style={{
+          /* style={{
             backgroundColor: options === "insights" ? "white" : "",
             color: options === "insights" ? "black" : "white",
+          }} */
+          style={{
+            backgroundColor: "white",
+            color: "black",
           }}
         >
           INSIGHTS E CASES
         </p>
-        <p
+        {/* <p
           onClick={() => setOptions("resultados")}
           style={{
             backgroundColor: options === "resultados" ? "white" : "",
@@ -63,10 +67,10 @@ export default function InsightsAndCasesDesktop() {
           }}
         >
           NOSSOS RESULTADOS
-        </p>
+        </p> */}
       </div>
-      {options === "insights" ? (
-        <>
+      {/* {options === "insights" ? (
+        <> */}
           <h1>INSIGHTS E CASES</h1>
           <div className="cases">
             {imageKeys.map((key, index) => {
@@ -95,7 +99,7 @@ export default function InsightsAndCasesDesktop() {
                 : "Selecione uma imagem para ver mais detalhes."}
             </p>
           </section>
-        </>
+        {/* </>
       ) : (
         <>
           <h1>NOSSOS RESULTADOS</h1>
@@ -105,7 +109,7 @@ export default function InsightsAndCasesDesktop() {
             <img src={PremioCC}></img>
           </div>
         </>
-      )}
+      )} */}
     </Container>
   );
 }
@@ -126,7 +130,7 @@ const Container = styled.div`
   }
   .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 500px;
     margin-bottom: 30px;

@@ -13,7 +13,9 @@ export default function PortalsMobile() {
             portal de auto negociação Desembaraça e consulte as opções
             disponíveis para você.
           </p>
+          <a href="https://qista.desembaraca.com.br/" target="_blank">
           <button>Desembaraça</button>
+          </a>
         </div>
       </section>
       <section>

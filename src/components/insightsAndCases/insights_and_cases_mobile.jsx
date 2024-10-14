@@ -56,13 +56,13 @@ export default function InsightsAndCasesMobile() {
         <p
           onClick={() => setOptions("insights")}
           style={{
-            backgroundColor: options === "insights" ? "white" : "",
-            color: options === "insights" ? "black" : "white",
+            backgroundColor:"white",
+            color: "black",
           }}
         >
           INSIGHTS E CASES
         </p>
-        <p
+        {/* <p
           onClick={() => setOptions("resultados")}
           style={{
             backgroundColor: options === "resultados" ? "white" : "",
@@ -70,10 +70,10 @@ export default function InsightsAndCasesMobile() {
           }}
         >
           NOSSOS RESULTADOS
-        </p>
+        </p> */}
       </div>
-      {options === "insights" ? (
-        <>
+      {/* {options === "insights" ? (
+        <> */}
           <h1>INSIGHTS E CASES</h1>
           <Swiper
             spaceBetween={30}
@@ -102,7 +102,7 @@ export default function InsightsAndCasesMobile() {
           <TextBox>
             <Text>{texts[activeImage]}</Text>
           </TextBox>{" "}
-        </>
+        {/* </>
       ) : (
         <>
           <h1>NOSSOS RESULTADOS</h1>
@@ -112,7 +112,7 @@ export default function InsightsAndCasesMobile() {
             <img src={PremioCC}></img>
           </div>
         </>
-      )}
+      )} */}
     </Container>
   );
 }
