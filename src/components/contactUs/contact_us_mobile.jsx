@@ -133,7 +133,7 @@ export default function ContactUsMobile() {
           </div>
           <div>
             <img src={Mail}></img>
-            <p>rh@setrabpo.com.br</p>
+            <p>trabalheconosco@setrabpo.com.br</p>
           </div>
           <div className="links">
             <a

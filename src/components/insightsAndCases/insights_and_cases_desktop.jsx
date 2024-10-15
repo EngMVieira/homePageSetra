@@ -57,7 +57,7 @@ export default function InsightsAndCasesDesktop() {
             color: "black",
           }}
         >
-          INSIGHTS E CASES
+          CASES DE SUCESSO
         </p>
         {/* <p
           onClick={() => setOptions("resultados")}
@@ -71,7 +71,7 @@ export default function InsightsAndCasesDesktop() {
       </div>
       {/* {options === "insights" ? (
         <> */}
-          <h1>INSIGHTS E CASES</h1>
+          <h1>CASES DE SUCESSO</h1>
           <div className="cases">
             {imageKeys.map((key, index) => {
               const isActive = activeImage === index;

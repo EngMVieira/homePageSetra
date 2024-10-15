@@ -125,7 +125,7 @@ export default function ContactUsDesktop() {
             <p>(11) 4659-0419</p>
           </div>
           <div>
-            <img src={DP}></img>
+            <img src={Mail}></img>
             <p>contato@setrabpo.com.br</p>
           </div>
           <div>
@@ -136,7 +136,7 @@ export default function ContactUsDesktop() {
             </p>
           </div>
           <div>
-            <img src={Mail}></img>
+            <img src={DP}></img>
             <p>trabalheconosco@setrabpo.com.br</p>
           </div>
           <div className="links">

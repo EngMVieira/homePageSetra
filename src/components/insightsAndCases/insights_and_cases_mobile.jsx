@@ -60,7 +60,7 @@ export default function InsightsAndCasesMobile() {
             color: "black",
           }}
         >
-          INSIGHTS E CASES
+          CASES DE SUCESSO
         </p>
         {/* <p
           onClick={() => setOptions("resultados")}
@@ -74,7 +74,7 @@ export default function InsightsAndCasesMobile() {
       </div>
       {/* {options === "insights" ? (
         <> */}
-          <h1>INSIGHTS E CASES</h1>
+          <h1>CASES DE SUCESSO</h1>
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
