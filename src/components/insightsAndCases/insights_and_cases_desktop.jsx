@@ -46,19 +46,19 @@ export default function InsightsAndCasesDesktop() {
   return (
     <Container options={options}>
       <div className="options">
-        <p
+       {/*  <p
           onClick={() => setOptions("insights")}
-          /* style={{
+          style={{
             backgroundColor: options === "insights" ? "white" : "",
             color: options === "insights" ? "black" : "white",
-          }} */
+          }}
           style={{
             backgroundColor: "white",
             color: "black",
           }}
         >
           CASES DE SUCESSO
-        </p>
+        </p> */}
         {/* <p
           onClick={() => setOptions("resultados")}
           style={{
