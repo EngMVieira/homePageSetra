@@ -26,12 +26,10 @@ const images = {
 };
 
 const texts = [
-  "Com equipe qualificada e sendo referência na conexão Tecnologia - Pessoas, nos diferenciamos na inovação constante, garantindo estratégias assertivas e planejadas de acordo com a particularidade de cada negócio. Atuamos na recuperação de pessoa física ou jurídica, nos segmentos de companhias elétricas, varejo, telecom, educacional, financeiro, de serviços, entre outros. Temos a expertise na recuperação de valores que vão desde o início da dívida até os atrasos mais antigos (W.O).",
-  "Somos uma empresa que se destaca no mercado pelo atendimento de SAC humanizado e serviços de qualidade.Além de atendimento ao telefone, nossa equipe busca entender as necessidades de cada cliente individualmente, buscando soluções satisfatórias para cada situação. Valorizamos a satisfação do cliente e estamos sempre em busca de aprimoramento para oferecer um atendimento eficiente e resolutivo.",
-  "Nosso processo de vendas cria oportunidades para o seu negócio. Essa é a vantagem de ser um cliente SETRA BPO, melhoramos a sua eficiência operacional, reduzindo custos, tempo e aumentando sua margem de lucro. Receptivo, ativo ou digital, entregamos qualidade em diferentes frentes, da informação sobre um determinado produto ou serviço à retenção de um cliente.",
-  "Através do uso de ferramentas tecnológicas, a empresa garante gestão ágil e eficiente, além de transparência em todas as etapas do processo.Com nosso BackOffice, os clientes podem contar com uma gestão mais estratégica, resultando em maior produtividade e consequentemente, mais resultados para a empresa.Resultados eficientes através do monitoramento de performance, tempo de tratamento, tempo de retorno e volumes recebidos em todos os canaisTemos soluções digitais que otimizam as demandas operacionais.",
-  "O segmento de mesa de crédito permite ao cliente uma gestão financeira mais eficaz, validando a partir de dados estratégicos a probabilidade de o tomador cumprir ou não o contrato.Isso aumenta a confiabilidade nas operações de análise e concessão de crédito das empresas, resultando em melhores vendas e resultados financeiros.",
-  "Dispomos de soluções digitais inovadoras, desenvolvidas especialmente para atender à crescente demanda por eficiência e praticidade no relacionamento com clientes.Sabemos que a gestão de clientes pode ser um desafio, e por isso oferecemos um conjunto completo de ferramentas que visam facilitar a comunicação, reduzir custos e melhorar a experiência do usuário.Temos soluções de Portal de Autoatendimento para Clientes Inadimplentes, soluções Omnichannel de Atendimento, desenvolvimento de Chatbot com Inteligência Artificial, soluções de Agentes Virtuais de Atendimento e RPAs.",
+  "O futuro pede um atendimento mais dinâmico e humanizado.Através de soluções de People Analytics traçamos perfis ideais para cada projeto. Com o perfil ideal, conseguimos reduzir o turn over para 1,2%, e entregar +272% de resultados nas operações onde implantamos o projeto.Redução de inadimplência: Com a ajuda dos especialistas em cobrança, as empresas podem reduzir significativamente os índices de inadimplência. Os especialistas são capazes de identificar padrões de pagamento e tomar medidas proativas para fazer a melhor oferta. Conhecimento e expertise: Possuem conhecimento aprofundado das leis e regulamentos relacionados à cobrança. Eles estão atualizados com as melhores práticas do setor e podem fornecer orientações valiosas para a empresa em termos de políticas de crédito, termos de pagamento e processos de cobrança.",
+  "Ação de baixo investimento e com até 22% de retorno sobre o envio. Trata-se da notificação extrajudicial de clientes que, com base no perfil, são registrados em um cartório de notas. O fato de receber um e-mail com o assunto de “Notificação”, traz um apelo maior a cobrança e capta a atenção do cliente para com a dívida que possui.",
+  "O PrêmioABT é a maior premiação em relacionamento com o cliente no Brasil e tem como propósito reconhecer e divulgar as melhores práticas desta indústria, transformando os cases vencedores em referência para o mercado.Este prêmio é resultado do esforço de uma equipe engajada com propósito. Categoria: Empresa revelação.",
+  "O agente virtual exerce papel fundamental na produtividade das operações e deixou de ser um coadjuvante para se tornar o principal aliado para potencializar as ações de cobrança e Televendas. O Agente pode ser personalizado para cada cliente de acordo com região e público, permitindo diversas customizações para um atendimento cada vez mais humanizado."
 ];
 
 export default function InsightsAndCasesMobile() {
@@ -43,7 +41,7 @@ export default function InsightsAndCasesMobile() {
         const nextImage = (prevImage + 1) % 4; // Incrementa e faz o loop de volta ao 0 após 6
         return nextImage;
       });
-    }, 6000);
+    }, 8000);
 
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
   }, []);

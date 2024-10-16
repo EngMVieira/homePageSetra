@@ -20,7 +20,7 @@ export default function InsightsAndCasesDesktop() {
         const nextImage = (prevImage + 1) % 4; // Incrementa e faz o loop de volta ao 0 após 6
         return nextImage;
       });
-    }, 6000);
+    }, 8000);
 
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente desmonta
   }, []);
@@ -35,7 +35,7 @@ export default function InsightsAndCasesDesktop() {
   };
   const imageKeys = Object.keys(images);
   const texts = [
-    "O futuro pede um atendimento mais dinâmico e humanizado.Através de soluções de People Analytics traçamos perfis ideais para cada projeto. Com o perfil ideal, conseguimos reduzir o turn over para 1,2%, e entregar +272% de resultados nas operações onde implantamos o projeto.Redução de inadimplência: Com a ajuda dos especialistas em cobrança, as empresas podem reduzir significativamente os índices de inadimplência. Os especialistas são capazes de identificar padrões de pagamento e tomar medidas proativas para fazer a melhor oferta.Conhecimento e expertise: Possuem conhecimento aprofundado das leis e regulamentos relacionados à cobrança. Eles estão atualizados com as melhores práticas do setor e podem fornecer orientações valiosas para a empresa em termos de políticas de crédito, termos de pagamento e processos de cobrança.",
+    "O futuro pede um atendimento mais dinâmico e humanizado.Através de soluções de People Analytics traçamos perfis ideais para cada projeto. Com o perfil ideal, conseguimos reduzir o turn over para 1,2%, e entregar +272% de resultados nas operações onde implantamos o projeto.Redução de inadimplência: Com a ajuda dos especialistas em cobrança, as empresas podem reduzir significativamente os índices de inadimplência. Os especialistas são capazes de identificar padrões de pagamento e tomar medidas proativas para fazer a melhor oferta. Conhecimento e expertise: Possuem conhecimento aprofundado das leis e regulamentos relacionados à cobrança. Eles estão atualizados com as melhores práticas do setor e podem fornecer orientações valiosas para a empresa em termos de políticas de crédito, termos de pagamento e processos de cobrança.",
     "Ação de baixo investimento e com até 22% de retorno sobre o envio. Trata-se da notificação extrajudicial de clientes que, com base no perfil, são registrados em um cartório de notas. O fato de receber um e-mail com o assunto de “Notificação”, traz um apelo maior a cobrança e capta a atenção do cliente para com a dívida que possui.",
     "O PrêmioABT é a maior premiação em relacionamento com o cliente no Brasil e tem como propósito reconhecer e divulgar as melhores práticas desta indústria, transformando os cases vencedores em referência para o mercado.Este prêmio é resultado do esforço de uma equipe engajada com propósito. Categoria: Empresa revelação.",
     "O agente virtual exerce papel fundamental na produtividade das operações e deixou de ser um coadjuvante para se tornar o principal aliado para potencializar as ações de cobrança e Televendas. O Agente pode ser personalizado para cada cliente de acordo com região e público, permitindo diversas customizações para um atendimento cada vez mais humanizado."
